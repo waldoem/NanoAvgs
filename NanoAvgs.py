@@ -11,7 +11,7 @@ import pandas as pd
 # In[3]:
 
 
-m_path =  ['I:/LAB SAMPLES/1. LARGE-PD from LATAM/2. Brazil/Quantification Raw Data/01-2024/RAWDATA Ribeirao 8-22 stock tubes dsDNA 1_22_2024 10_50_44 AM.csv'] 
+m_path =  ['']
 # input path(s) to the raw NanoDrop output .csv file(s) here
 rawdata = []
 # leave blank
@@ -37,7 +37,7 @@ source = input('What is the source of these readings? (type either SP or ST):')
 # In[6]:
 
 
-code_path = 'I:/LAB SAMPLES/1. LARGE-PD from LATAM/2. Brazil/Quantification Raw Data/01-2024/Ribeirao codes 8-22 1-22-24.csv'
+code_path = ''
 # input path to .csv file for the list of codes exported by the NanoDrop
 pcodes = pd.read_csv(code_path,usecols=[0,1])
 pcodes_df = pd.DataFrame(pcodes)
@@ -200,7 +200,7 @@ print(nanoavg)
 # In[62]:
 
 
-code_path = 'I:/LAB SAMPLES/1. LARGE-PD from LATAM/2. Brazil/Quantification Raw Data/01-2024/Ribeirao codes 8-22 1-22-24.csv'
+code_path = ''
 # input path to .csv file for the list of codes exported by the NanoDrop
 pcodes= pd.read_csv(code_path,usecols=['codes','volumes'])
 
@@ -213,6 +213,6 @@ print(pcodes)
 
 
 df2 = pd.DataFrame(pcodes)
-df2.to_csv('I:/LAB SAMPLES/1. LARGE-PD from LATAM/2. Brazil/Quantification Raw Data/01-2024/Ribeirao nano avg codes 8-22 1-22-24.csv')
+df2.to_csv('')
 # input the path to where the output file should go including the name of the output file
 
