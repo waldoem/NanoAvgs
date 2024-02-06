@@ -24,7 +24,7 @@ nano_rawlist = nano_rawdata['Nucleic Acid(ng/uL)'].tolist()
 print(nano_rawlist)
 
 
-# nanoen = list(enumerate(nano_rawlist))
+nanoen = list(enumerate(nano_rawlist))
 # print(nanoen)
 
 # In[5]:
