@@ -127,7 +127,7 @@ for spot, nano in nanoen:
             skip_until = spot + 2
         elif pcodes_index[ID] == 10:
             #print("=10")
-            combos = [(0,2),(1,2)]
+            combos = [(0,1),(0,2),(1,2)]
             for spot1,spot2 in combos:
                 if (spot + spot1) and (spot + spot2) in index_map.keys():
                     if (abs(index_map[spot + spot1]-index_map[spot + spot2])) <= 100:
